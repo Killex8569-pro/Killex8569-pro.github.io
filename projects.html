@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Ton Nom</title>
+  
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Importation de la police Google Fonts (Montserrat Alternates) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Importation du script JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="home" class="section">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <p>Je suis étudiant en BTS SIO de deuxième année à L'institution des chartreux, passionné par la cybersécurité et les nouvelles technologies.</p>
+    <a href="#about" class="btn">En savoir plus sur ma formation</a>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="about" class="section">
+    <h2>À propos de moi</h2>
+    <p>Je suis actuellement en deuxième année de BTS SIO, spécialisé en développement d'applications web et mobile. J'aime coder, apprendre de nouvelles choses et créer des projets innovants.</p>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projects" class="section">
+    <h2>Mes Projets</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Projet scolaire</h3>
+        <p>TP réaliser dans mon cadre scolaire</p>
+        <a href="projet1.html"><button>Voir mes projets</button></a>
+      </div>
+      <div class="project">
+        <h3>Projet 2</h3>
+        <p>Description du projet 2.</p>
+        <a href="projet1.html"><button>Voir mes projets</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section informations -->
+  <section id="contact" class="section">
+    <h2>Contactez-moi</h2>
+    <form action="#">
+      <label for="name">Numéro de téléphone</label>
+<p>07 67 08 12 85</p>
+
+      <label for="email">Email</label>
+      <br>
+      <label for="email">alexandre.faublanette@gmail.com</label>
+      <br>
+      <button onclick="window.location.href='mailto:alexandre.faublanette@gmail.com';">Envoyer un email</button>
+    </form>
+  </section>
+
+</body>
+</html>

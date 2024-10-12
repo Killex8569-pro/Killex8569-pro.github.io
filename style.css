@@ -1,0 +1,177 @@
+/* Importation de la police personnalisée stockée localement */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./data/Montserrat_Alternates.ttf') format('truetype');
+  }
+  
+  /* Application de la police */
+  body {
+    font-family: 'CustomFont', 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+/* Déclaration des variables CSS pour personnalisation */
+:root {
+    --underline-color: #ffffff; /* Couleur du soulignement par défaut */
+    --underline-thickness: 2px; /* Épaisseur de la ligne */
+    --underline-width: 100%; /* Largeur de la ligne */
+  }
+  
+  /* Barre de navigation transparente */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Animation au survol */
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: var(--underline-thickness);
+    background-color: var(--underline-color); /* Utilisation de la couleur par défaut */
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    width: var(--underline-width);
+  }
+  
+  nav ul li a:hover {
+    color: var(--underline-color);
+  }
+  
+  /* Forcer la couleur du soulignement même en mode sombre */
+  @media (prefers-color-scheme: dark) {
+    nav ul li a::after {
+      background-color: var(--underline-color); /* Garde la même couleur qu'en mode clair */
+    }
+
+    nav ul li a:hover {
+      color: var(--underline-color); /* Garde la même couleur qu'en mode clair */
+    }
+  }
+
+/* deuxième partie du CSS */
+
+
+  /* Sections avec image d'arrière-plan */
+  #home {
+    background: url('./data/bg.png') no-repeat center center/cover; /* Image de fond couvrant toute la section */
+    color: #fff; /* Couleur du texte en blanc */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centrage vertical des éléments */
+    align-items: center; /* Centrage horizontal des éléments */
+    min-height: 100vh; /* La section prend au moins toute la hauteur de l'écran */
+  }
+  
+  /* Styles des autres sections */
+  .section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  /* Bouton */
+  .btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6E8EF7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #A4F8FF;
+  }
+  
+  /* Projets */
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .project {
+    background-color: #6E8EF7;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  /* Formulaire de contact */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #6E8EF7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #A4F8FF;
+  }
+  
+  /* Animation pour le défilement */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+h1 {
+    size: 30px;
+}
