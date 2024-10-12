@@ -3,7 +3,10 @@
     font-family: 'CustomFont';
     src: url('./data/Montserrat_Alternates.ttf') format('truetype');
   }
-  
+
+html {
+  scroll-behavior: smooth;
+}
   /* Application de la police */
   body {
     font-family: 'CustomFont', 'Montserrat Alternates', sans-serif;
@@ -89,6 +92,7 @@ a {
   #home {
     background: url('./data/bg.png') no-repeat center center/cover; /* Image de fond couvrant toute la section */
     color: #fff; /* Couleur du texte en blanc */
+    scroll-behavior: smooth;
     display: flex;
     flex-direction: column; /* Aligne les éléments verticalement */
     justify-content: center; /* Centrage vertical des éléments */
@@ -155,7 +159,7 @@ a {
   
   button {
     padding: 10px 20px;
-    background-color: #6E8EF7;
+    background-color: #000000;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -163,7 +167,8 @@ a {
   }
   
   button:hover {
-    background-color: #A4F8FF;
+    background-color: #af2ac4;
+    transition: 0.3s;
   }
   
   /* Animation pour le défilement */
