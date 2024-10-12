@@ -80,7 +80,10 @@
   }
 
 /* deuxième partie du CSS */
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
   /* Sections avec image d'arrière-plan */
   #home {
@@ -100,11 +103,15 @@
     text-align: center;
     background-color: #fff;
   }
-  
+  #nom {
+    font-size: 50px;
+    font-weight: bold; /* Optionnel : pour rendre le texte plus épais */
+    text-align: center
+  }
   /* Bouton */
   .btn {
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #000000;
     color: #6E8EF7;
     border: none;
     border-radius: 5px;
