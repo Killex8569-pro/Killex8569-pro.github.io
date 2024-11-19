@@ -5,7 +5,7 @@
   }
 #contenue {
   font-family: 'CustomFont', 'Montserrat Alternates', sans-serif;
-  background: url('./data/BG_6_portfolio.png') no-repeat center center/cover;
+  background: url('./data/bg_7_potfolio.png') no-repeat center center/cover;
   text-align: center;
   background-color: #f5f5f5;
   color: #000000;
@@ -149,6 +149,24 @@ a {
     border-radius: 10px;
     width: 300px;
   }
+
+/* Certification */
+.certif-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet de faire passer les éléments à la ligne quand l'espace est insuffisant */
+  justify-content: center;
+  gap: 2rem;
+}
+
+.certif {
+  background-color: #49d250;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
+}
+
   
   /* Formulaire de contact */
   form {
