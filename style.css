@@ -162,7 +162,7 @@ a {
 }
 
 .certif {
-  background-color: #49d250;
+  background-color: #6c8faf5c;
   color: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -216,3 +216,57 @@ a {
 h1 {
     size: 30px;
 }
+
+
+/* Styles pour la barre de navigation complète */
+.navbar {
+  background-color: #348afa; /* Bleu clair */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 40px;
+  margin: 0 auto; /* Centre la barre de navigation */
+  max-width: 90%; /* Limite la largeur totale pour un bon centrage */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF; /* Texte blanc */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Centre les liens si besoin */
+}
+
+
+.nav-item {
+  text-decoration: none; /* Supprime le soulignement */
+  color: #FFFFFF; /* Texte blanc */
+  font-weight: 600;
+  padding: 0; /* Supprime le remplissage */
+  background: none; /* Supprime tout arrière-plan */
+  border: none; /* Supprime les bordures */
+  transition: color 0.3s ease; /* Animation pour le changement de couleur */
+}
+
+.nav-item:hover {
+  color: #B3E5FC; /* Change uniquement la couleur du texte au survol */
+}
+
