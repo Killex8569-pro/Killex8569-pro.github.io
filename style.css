@@ -110,11 +110,14 @@ a {
   
   /* Styles des autres sections */
   .section {
-    padding: 100px 20px;
-    min-height: 100vh;
+    padding: 0 20px; /* Suppression des marges verticales */
+    margin: 0; /* Aucune marge entre les sections */
+    min-height: 100vh; /* Pour garder une hauteur minimale */
     text-align: center;
     background-color: #fff;
-  }
+}
+
+  
   #nom {
     font-size: 50px;
     font-weight: bold; /* Optionnel : pour rendre le texte plus épais */
